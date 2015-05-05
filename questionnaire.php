@@ -16,7 +16,7 @@
       <?php
     echo $_POST['value'];
 ?>
-<form method="post" action="">
+<form method="post" action="posted.php">
 <select>
   <option value="a">A</option>
   <option value="b">B</option>
@@ -24,19 +24,9 @@
   <option value="d">D</option>
 </select>
 <br>
-<?php
-      if($answer == $answers[$i]) {
-
-        echo "you were correct";
-
-      }
-
-    }
-    
-
-   ?>
 
 <input type="submit">
+<?php include('posted.php'); ?>
 </form>
 </body>
 </html>
